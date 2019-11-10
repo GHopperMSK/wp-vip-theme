@@ -1,1 +1,1 @@
-HTML THEME
+index.php template page
