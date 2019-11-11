@@ -16,6 +16,10 @@ body {
     color: rgba(255,255,255,.7);
 }
 
+.nav-link:hover {
+    color: rgba(255,255,255,9);
+}
+
 @media screen and (min-width: 581px) {
     .dropdown:hover > .dropdown-menu {
         display: block;
