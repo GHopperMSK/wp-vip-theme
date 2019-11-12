@@ -11,3 +11,15 @@ function scrollFunction() {
         document.getElementById("vip-navbar").style.backgroundColor = 'rgba(0, 0, 0, 0.0)';
     }
 }
+
+function toggleClick (e) {
+    if ($(window).width() < 992) {
+        e.preventDefault();
+    }
+    e.stopPropagation();
+}
+
+$(document).ready(function() {
+    $('.navbar ul.navbar-nav > .dropdown > a[href]').click(toggleClick);
+});
+
