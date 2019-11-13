@@ -12,7 +12,7 @@ function scrollFunction() {
     }
 }
 
-function toggleClick (e) {
+function navTopLevelButtonClick (e) {
     if ($(window).width() < 992) {
         e.preventDefault();
     }
@@ -20,6 +20,6 @@ function toggleClick (e) {
 }
 
 $(document).ready(function() {
-    $('.navbar ul.navbar-nav > .dropdown > a[href]').click(toggleClick);
+    $('.navbar ul.navbar-nav > .dropdown > a[href]').click(navTopLevelButtonClick);
 });
 
