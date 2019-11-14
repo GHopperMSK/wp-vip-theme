@@ -113,7 +113,7 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 
-.navbar-cart-inner .cart-item-number {
+.navbar-cart-inner .cart-item-count {
     display: block;
     position: absolute;
     top: 12px;

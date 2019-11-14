@@ -19,6 +19,20 @@ function vip_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'vip_scripts' );
 
+
+// refresh mini cart counter
+add_filter( 'woocommerce_add_to_cart_fragments', 'wc_refresh_mini_cart_count');
+function wc_refresh_mini_cart_count($fragments){
+    ob_start();
+    ?>
+    <span class="cart-item-count">
+        <?php echo WC()->cart->get_cart_contents_count(); ?>
+    </span>
+    <?php
+    $fragments['.cart-item-count'] = ob_get_clean();
+    return $fragments;
+}
+
 /**
  * WP_Bootstrap_Navwalker class
  *

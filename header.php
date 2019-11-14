@@ -65,7 +65,7 @@
                         <div class="navbar-cart-inner">
                             <a href="/cart/" title="Перейти в корзину" class="cart-contents">
                                 <i class="icon-basket fas fa-shopping-cart"></i>
-                                <span class="cart-item-number">0</span>
+                                <span class="cart-item-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
                             </a>
                         </div>
                     </div>
