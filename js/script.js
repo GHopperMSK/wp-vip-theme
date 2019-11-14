@@ -19,7 +19,14 @@ function navTopLevelButtonClick (e) {
     e.stopPropagation();
 }
 
+function toggleSearch() {
+    $(".navbar-cart .header-search").toggleClass("header-search-open");
+}
+
 $(document).ready(function() {
     $('.navbar ul.navbar-nav > .dropdown > a[href]').click(navTopLevelButtonClick);
+
+
+    $(".navbar-cart .header-search").click(toggleSearch);
 });
 

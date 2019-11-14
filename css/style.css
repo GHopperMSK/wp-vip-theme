@@ -2,6 +2,144 @@ body {
     background-color: #fff;
 }
 
+.header-container {
+    display: table;
+    width: 100%;
+    min-height: 50px;
+}
+
+.navbar-header {
+    display: table-cell !important;
+    float: none;
+    width: 230px;
+    vertical-align: middle;
+}
+
+.header-menu-wrap {
+    display: table-cell !important;
+    vertical-align: middle;
+}
+
+.header-search {
+    float: left;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.header-search-button {
+    color: #cbc7c2;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.header-search-button:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header-search.header-search-open .header-search-input {
+    display: block;
+}
+
+.header-search-input input[type="search"] {
+    width: 100%;
+    padding: 10px;
+    padding-right: 28px;
+    border: none;
+    border-radius: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 2px;
+}
+
+.header-search-input input[type=submit] {
+    position: absolute;
+    z-index: 9;
+    top: 5px;
+    right: 5px;
+    width: 28px;
+    height: 33px;
+    border: none;
+    background: none;
+    text-indent: -9999999px;
+}
+
+.header-search-input:after {
+    display: inline-block;
+    position: absolute;
+    z-index: 8;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    width: 33px;
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    line-height: 33px;
+    font-family: 'FontAwesome';
+    content: '\f002';
+}
+
+.header-search-input {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 220px;
+    padding: 5px;
+    background: rgba(26, 26, 26, 0.9);
+}
+
+.navbar-cart-inner {
+    float: right;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-cart-inner .icon-basket {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 12px;
+}
+
+.navbar-cart-inner:hover .icon-basket {
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar-cart-inner .cart-item-number {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: initial;
+    left: 8px;
+    width: auto;
+    min-width: 14px;
+    border-radius: 2px;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #111;
+    background-color: rgba(229, 229, 229, 0.8);
+}
+
+.navbar-cart {
+    display: table-cell !important;
+    width: 90px;
+    height: 25px;
+    margin-left: 20px;
+    padding-left: 30px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
 #vip-navbar {
     padding: 40px 10px; /* Large padding which will shrink on scroll (using JS) */
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
@@ -32,7 +170,7 @@ body {
     border-top-right-radius: 0;
 }
 
-.navbar-nav div.dropdown-menu > a.dropdown-item {
+.footer, .navbar-nav div.dropdown-menu > a.dropdown-item {
     color: rgba(255,255,255,.7);
 }
 .navbar-nav div.dropdown-menu a.dropdown-item:hover {
@@ -94,4 +232,8 @@ img {
     .container {
         max-width: 1170px;
     }
+}
+
+.footer {
+    padding: 10px;
 }
